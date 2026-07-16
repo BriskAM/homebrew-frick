@@ -1,7 +1,7 @@
 class Frick < Formula
   desc "Lightning-fast command-line corrector powered by Gemini/Groq APIs"
   homepage "https://github.com/BriskAM/frick"
-  version "0.1.3"
+  version "0.2.0"
 
   if OS.mac?
     if Hardware::CPU.intel?
