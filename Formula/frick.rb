@@ -1,23 +1,23 @@
 class Frick < Formula
   desc "Lightning-fast command-line corrector powered by Gemini/Groq APIs"
   homepage "https://github.com/BriskAM/frick"
-  version "0.1.2"
+  version "0.1.3"
 
   if OS.mac?
     if Hardware::CPU.intel?
       url "https://github.com/BriskAM/frick/releases/download/v#{version}/frick-darwin-amd64"
-      sha256 "ea4ab6c55f5eb1451848a9d484310698b409d887d6cef9c2ae12a64d2c01ba5e"
+      sha256 "c7b93a00a82ec2b64ea6e09d8cbd2b11d9c28c36aae1887299f841f1335849a0"
     elsif Hardware::CPU.arm?
       url "https://github.com/BriskAM/frick/releases/download/v#{version}/frick-darwin-arm64"
-      sha256 "afbdd0ec277724d9c95843c59ee27ad74e77824a4bdb7e71437f2da7a3a1297d"
+      sha256 "3f79a28cd1c4b88963fc3cd56d5c83d24ad09ee4e39db62d512a15218c7a9d33"
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/BriskAM/frick/releases/download/v#{version}/frick-linux-amd64"
-      sha256 "71ad32fe092e3766286b536a536f39adf816b12d6c5364db38960f43ddb4ea56"
+      sha256 "b55a0fe3b97017ba981e4a8b4d9e6e2859bf752561df13980796b26dd44bfb90"
     elsif Hardware::CPU.arm?
       url "https://github.com/BriskAM/frick/releases/download/v#{version}/frick-linux-arm64"
-      sha256 "f1bc8a05bea85b9870a702b2e66e8b84515dc306f0f25bb1552c4e42a29ae34c"
+      sha256 "c0551b3a12b50e5edff6076b1d02676a8fe2305b5cc8ad6444813a0eaba71b06"
     end
   end
 
